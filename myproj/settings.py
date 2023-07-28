@@ -134,9 +134,9 @@ WSGI_APPLICATION = 'myproj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cart',
-        'USER': 'root',
-        'PASSWORD': '123',
+        'NAME': 'products',   # name of the schema
+        'USER': 'root', 
+        'PASSWORD': '123',    # in case you forgot password using the following command on MySQL workbench - ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
         'HOST': 'localhost',  # If your MySQL server is on a different host, change this accordingly
         'PORT': '',           # Leave it as an empty string to use the default MySQL port (3306)
     }
